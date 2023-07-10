@@ -1,0 +1,14 @@
+zuul:
+ routes:
+  rtdis-service:
+   path: /rtdis/**
+   url: http://localhost:8081
+  jdrs-service:
+   path: /jdrs/**
+   url: http://localhost:8082
+  ps-service:
+   path: /ps/**
+   url: http://localhost:8083
+
+
+

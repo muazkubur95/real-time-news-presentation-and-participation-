@@ -1,0 +1,22 @@
+ably:
+  api:
+    key: Hbqg4w.qQ5Jjw:PvCPphyIaMpVyxgrsR8rRBwMlgceiYSKTmN1DRx0ZZE
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: rtdis_1
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      properties:
+        spring.json.trusted.packages: ablyservice
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR

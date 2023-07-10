@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rtdis
+  cloud:
+    config:
+      uri: http://localhost:8888
+  kafka:
+    bootstrap-servers: localhost:9092
+
+server:
+  port: 8081
+
+# Other configurations specific to the Presentation Service
+
+ably:
+  api:
+    key: Hbqg4w.DUcT9A:A9VZhP0LZ_RDXDsdgnfvjACvYUWef03G2uuExomePFU
+

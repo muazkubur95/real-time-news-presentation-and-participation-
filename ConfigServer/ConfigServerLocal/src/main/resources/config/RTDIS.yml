@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: RTDIS
+  spring:
+    kafka:
+      bootstrap-servers: localhost:9092
